@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Генератор паролів</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <input type="text" readonly id="password_out_tb">
+            <button id="copy_btn">Copy</button>
+        </div>
+
+
+        <div>
+            <input type="range" id="password_length_range" min="4" max="64" >
+            <input type="number" id="password_length_tb" min="4" max="64" value="8">
+        </div>
+
+        <div>
+            <input type="checkbox" id="number_cb" name="number_cb" checked>
+            <label for="number_cb">Цифри</label>
+            <input type="checkbox" id="char_cb" name="char_cb">
+            <label for="char_cb">Символи</label>
+            <input type="checkbox" id="char_upper_cb" name="char_upper_cb">
+            <label for="char_upper_cb">Регістр</label>
+            <input type="checkbox" id="char_spec_cb" name="char_spec_cb">
+            <label for="char_spec_cb">Спеціальні символи</label>
+            <input type="checkbox" id="repeat_cb" name="repeat_cb">
+            <label for="repeat_cb">Без повторень</label>
+        </div>
+
+
+        <button id="generate_btn">Генерувати</button>
+
+        <script src="script/script.js"></script>
+    </body>
+</html>
